@@ -10,7 +10,7 @@
 // Cross-platform sleep function with reduced sleep time
 void sleepFor(int seconds) {
   const double adjustmentFactor = 0.1; // Adjust to make sleep time 50% shorter
-  int adjustedMilliseconds = static_cast<int>(seconds * adjustmentFactor * 300);
+  int adjustedMilliseconds = static_cast<int>(seconds * adjustmentFactor * 300);// comemnts
 
   #ifdef _WIN32
     Sleep(adjustedMilliseconds);  // Windows Sleep uses milliseconds
